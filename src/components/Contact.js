@@ -24,12 +24,19 @@ const Contact = () => {
     setStatus("Sending...");
     try {
       const response = await axios.post("http://localhost:5000/api/contact", formData);
-      setFormData({ name: "", email: "", message: "" });
-      setStatus("");
-      return window.confirm('Message sent successfully!')
+    
+      if (response.status === 200) { // Check if the response indicates success
+        setFormData({ name: "", email: "", message: "" });
+        setStatus("Message sent successfully!");
+        window.confirm("Message sent successfully!");
+      } else {
+        setStatus("Unexpected response from the server. Please try again.");
+      }
     } catch (error) {
+      console.error("Error sending the message:", error); // Log error for debugging
       setStatus("Failed to send the message. Please try again.");
     }
+
     
   };
 
