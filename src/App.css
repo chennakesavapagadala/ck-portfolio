@@ -1,0 +1,205 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* =================================================================== */
+body {
+  font-family: 'Arial, sans-serif';
+  margin: 0;
+  padding: 0;
+  background-color: #81b29a;
+}
+body::-webkit-scrollbar, .container-fluid::-webkit-scrollbar{
+  display: none;
+}
+
+.header{
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px black;
+}
+
+nav a {
+  margin: 10px 10px;
+  font-family:  Arial;
+  font-size: 20px;
+ 
+}
+
+.container-fluid{
+  height: 753px;
+  /* border: 1px solid red; */
+  overflow: scroll;
+}
+
+.titles{
+  border-radius: 5px;
+}
+.about .name, .about .role, nav a{
+  /* display:inline-block; */
+  background:-webkit-linear-gradient(90deg,rgb(241, 134, 3),white,yellow 80%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-weight: bold;
+}
+/* ------- Education page --------------------- */
+.education {
+  margin-left: 20px;
+  margin-right:20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.edu_details{
+  border-radius: 5px;
+  /* margin:10px; */
+  box-shadow: 0 0 1px 1px lightgreen;
+  background-color: #81b29a;
+
+}
+.edu_details:hover{
+  box-shadow: 0px 0px 8px 0px black;
+}
+.edu_details h3{color:yellow;}
+
+
+/* -----technical skills ------------------- */
+.skills {
+  margin-left: 20px;
+  margin-right:20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.tskill {
+  margin-bottom: 40px;
+  box-shadow: 0 0 6px 0px black; 
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+.skill-title{
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: #61dafb;
+}
+.tskill-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  display: block;
+}
+.t-row:hover, .p-row:hover{
+  background-color: dimgrey;
+  box-shadow: 0px 0px 6px 2px black;
+  color: white;
+}
+.t-progress-bar {
+  background-color:gray;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 6px;
+  width: 100%;
+}
+
+.t-progress {
+  /* background: linear-gradient(90deg, #4caf50, #81c784); */
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* ------proffessional skills-------- */
+
+.pskill {
+  margin-bottom: 20px;
+}
+
+.pskill-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  display: block;
+}
+.pskill-name:hover{
+  box-shadow: 0 0 8px 0px black; ;
+}
+/* --------project page------------------------------------ */
+.project {
+  margin-left: 20px;
+  margin-right:20px;
+  margin-bottom: 20px;
+}
+.proj-details{
+  background-color: white;
+  border: 1px solid lightgreen;
+  border-radius: 6px; 
+}
+.proj-details:hover{
+  box-shadow: 0 0 8px 0px black; 
+}
+.proj-desc{
+  border-radius: 6px;
+  background-color: #81b29a;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.proj-desc:hover{
+  box-shadow: 0 0 8px 0px black; 
+}
+.proj-title{
+  color:blue;
+  
+}
+/* ------- Contact page -------------- */
+.contact {
+  height: 400px;
+}
+.contact .contact-form input, .message{
+  border: none;
+  text-align: center;
+}
+.status-message{
+  color: red;
+  font-size: 20px;
+}
