@@ -11,16 +11,16 @@ const About = () => {
           <div className='col-md-7 d-flex flex-column justify-content-end ' >
            <h5 className=''> Hii... Hello... I Am....</h5> 
             <h2 className='name text-center'>PaGaDaLa ChennAkesAvA</h2>
-            <div className='d-flex flex-row'>
-              <h4 className='role'>Python Developer ||</h4>
-              <h5>
-                <marquee className="marqu text-light" direction="up" scrollamount="3" onmouseover="Stop()"  style={styles.marqu}>
+            <div className='d-flex flex-row justify-content-center'>
+              <h4 className='role '>Python Developer ||</h4>
+              <div className="marquee-container text-left" style={styles.marqu}>
+                <div className="marquee-text ">
                   Web Technologies 
-                  <br></br><br></br>
+                  <hr></hr>
                   Data Analytics Enthusiast
-                </marquee>
-              </h5> 
-              <br></br>
+                </div>
+              </div>
+              
             </div> 
             <h4 className='text-light'>
               "A passionate Python full-stack developer with good Knowledge in both front-end and back-end development,
@@ -61,6 +61,9 @@ const styles = {
   },
   marqu:{
     maxHeight:'30px',
+    overflow: "hidden",
+    width: "30%",
+    whiteSpace: "nowrap",
   },
   resume:{
     textDecoration:'none',
