@@ -76,6 +76,22 @@ nav a {
   -webkit-text-fill-color:transparent;
   font-weight: bold;
 }
+
+.marquee-text {
+  animation: scrollText 4s linear infinite;
+  text-wrap: wrap;
+  font-size: 20px;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
 /* ------- Education page --------------------- */
 .education {
   margin-left: 20px;
