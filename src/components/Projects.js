@@ -12,7 +12,7 @@ const Projects = () => {
                   `,
       techStack: 'Python Pandas, Matplotlib, BeatifulSoupbs4, Folium etc..,',
       link: 'https://github.com/chennakesavapagadala/bharath-vidhya',
-      live : '',
+      
     },
     {
       title: 'Mouse Cursor Control Application',
@@ -34,6 +34,7 @@ const Projects = () => {
       `,
       techStack: 'React.js, Node.js, JavaScript, HTML, CSS, BootStrap ',
       link: 'https://github.com/chennakesavapagadala/ck-portfolio',
+      live : 'https://chennaportfolio.netlify.app/',
     },
     {
       title: 'Student Result Management System ',
