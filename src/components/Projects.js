@@ -12,6 +12,7 @@ const Projects = () => {
                   `,
       techStack: 'Python Pandas, Matplotlib, BeatifulSoupbs4, Folium etc..,',
       link: 'https://github.com/chennakesavapagadala/bharath-vidhya',
+      live:'https://bharathvidhya.onrender.com/',
       
     },
     {
